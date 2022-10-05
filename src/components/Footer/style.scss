@@ -1,0 +1,30 @@
+.footer {
+    padding: 64px 32px;
+    background-color: #6278F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    
+    .footer__col{
+        width: 25%;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none; 
+        
+        img{
+            height: 25px;
+            width: auto;
+        }
+    }
+
+    .logo{
+        text-align: center;
+        img{
+            height: 60px;
+            width: auto;
+        }
+    }
+}

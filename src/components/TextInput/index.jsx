@@ -1,10 +1,19 @@
 import './style.scss'
 
-function TextInput(props ) {
-    return (
+function TextInput(props) {
+
+   return (
         <div className="campo-texto">
-            <label htmlFor="">Nome</label>
-            <input type="text" placeholder='Digite o seu nome' />
+            <label>
+                {props.label}
+            </label>
+            <input 
+                type="text" 
+                required={props.required}
+                placeholder={props.placeholder} 
+                value={props.value}
+                onChange={e => props.handleChange(e.target.value)}
+                />
         </div>
     )
 }
